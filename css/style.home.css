@@ -1,0 +1,61 @@
+/*folha de estilo em cascata
+    É possivel adiciona-la de tres formas
+     * inline css
+     * CSS interno
+     * css externo
+     * para fins de organização o css segue a hierarquia html
+
+     * cores hexadecimal - os dois primeiros vermelho, os outros 2 é verde e as duas finais é azul #FFFFFF (representação em 6 caracteres das cores vermelho,verde, azul) 
+*/
+#banner {
+    width: 100%; 
+    margin: 0 auto;
+}
+.principal {
+    background-color: #CCCCCC;
+    padding: 30px;
+}
+.titulo-principal {
+    padding-left: 20px;
+}
+.titulo-centralizado {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+#missao {
+    font-size: 20px;
+}
+em strong {
+    color: red;
+}
+.itens {
+    font-style: italic;
+}
+.beneficios {
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+}
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+.imagem-beneficios {
+    width: 50%;
+}
+footer {
+    text-align: center;
+    background: url("../img/bg.jpg");
+    padding: 40px;
+}
+.copyright {
+    color: #ffffff;
+    color: 13px;
+    margin: 20px 0 0;
+}

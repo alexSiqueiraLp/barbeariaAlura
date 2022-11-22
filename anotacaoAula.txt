@@ -1,0 +1,62 @@
+display inline-block e inline:
+
+inline: ocupam apenas o tamanho do seu conteudo na pagina, permitindo que outros elementos fiquem ao seu lado
+
+Inline-block: por padrão vai exibir a largura de seu conteudo, porém não permite vizinhos, e é possivel controlar suas definições
+
+- quando se tem diversos inputs radio(seleção) e quer que eles partecem ao mesmo grupo, deve se declarar o mesmo name a todos eles, para que o usuario não marque mais de uma opção
+
+a hierarquia do css, segue uma padrão de prioridade - id > maior prioridade - 100 / class > priodade media - 10 / tag > menor prioridade - 1 / e o estilo inline, se sobresai sobre todos acima
+
+a propriedade required nas tags de inputs do html5 faz com que determinado campo seja obrigatorio o preenchimento
+
+placeholder: é uma prorpiedade que da ao usuario sua sugestão para preencher determinada entrada de dados
+
+fieldset: essa divisão é usado quando se quer configurar um ou mais campos de dados de um assunto em especifico
+
+table:
+    *A tag tr, que representa a linha da tabela;
+    *A tag td, que representa a célula da tabela
+    *para unir uma celula em varias colunas utailiza-se a propriedade colspan="numerodecolunas"
+
+propriedade float css: faz com que determinado elemento flutue sobre a pagina deixando uma sombra, usado para deixar elementos em volta
+
+css 
+/*Pegar a primeira letra de um elemento html*/
+.titulo-principal::first-letter {
+    font-weight: bold;
+}
+/*pegar a primeira linha de um paragrafo e deixar em italico*/
+p::first-line {
+    font-style: italic;
+}
+/*antes do conteudo*/
+.titulo-principal::before {
+    content: "[ ";
+}
+/*depois do conteudo*/
+.titulo-principal::after {
+    content: " ]";
+}
+
+
+## Seletores avançados CSS
+
+Seletor >, para acessar os filhos de determinado elemento. Por exemplo, para acessar todos os p dentro de main:
+main > p {
+}
+
+Seletor +, para acessar o primeiro irmão de determinado elemento. Por exemplo, para acessar o primeiro p após um img:
+img + p {
+}
+
+Seletor ~, para acessar todos os irmãos de determinado elemento. Por exemplo, para acessar todos os p após um img:
+img ~ p {
+}
+
+Seletor not, para acessar os elementos, exceto algum. Por exemplo, para acessar todos os p dentro de main, exceto o p que tem id missao:
+main p:not(#missao) {
+}
+
+Como fazer contas com CSS, com a propriedade calc
+
